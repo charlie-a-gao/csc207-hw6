@@ -53,13 +53,16 @@ public class TBUtils
       {
         // Even though we only call block.row with a valid i,
         // we need to put the call in a try/catch block.
-        try
+    	
+    	try
           {
-        	pen.println(block.row(i));
+    		pen.println(block.row(i));
           } // try
         catch (Exception e)
           {
-            pen.println();
+
+        	System.out.println("Exception: " + e.getMessage());
+        	pen.println();
           } // catch (Exception)
       } // for
   } // print(PrintWriter, TextBlock)
