@@ -29,7 +29,6 @@ public class Package implements Item {
 	
 	public boolean equals(Package other)
 	{
-		if(equals(name,other.name) && equals)
+		return (name.equals(other.name) && weight.equals(other.getWeight()) && price == other.getPrice());
 	}
-	
 }
